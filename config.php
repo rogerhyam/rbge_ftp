@@ -13,7 +13,7 @@
   //$livingCatalogueURL = 'http://elmer.rbge.org.uk/bgbase/livcol/bgbaselivcol.php?cfg=bgbase%2Flivcol%2Fbgbaseallacc.cfg&acc__num=';
   $livingCatalogueURL = 'https://data.rbge.org.uk/search/livingcollection?cfg=allacc.cfg&acc_num=';
   
-  include('../roger_secret.php');
+  include('../../roger_secret.php');
 
   // create and initialise the database connection
   $mysqli = new mysqli($db_host, $db_user, $db_password, $db_database);    

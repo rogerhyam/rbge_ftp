@@ -81,6 +81,8 @@
         <field index="8" term="http://purl.org/dc/terms/license"/>
         <field index="9" term="http://purl.org/dc/terms/rightsHolder"/>
         <field index="10" term="http://purl.org/dc/terms/creator"/>
+        <field index="11" term="http://rs.tdwg.org/ac/terms/serviceExpectation"/>
+        
     </extension>
 
 </archive>
