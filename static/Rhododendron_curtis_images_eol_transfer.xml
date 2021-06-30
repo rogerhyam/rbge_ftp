@@ -1,0 +1,1720 @@
+<?xml version="1.0" standalone="yes" ?>
+        <response
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://rs.tdwg.org/dwc/dwcore/ http://services.eol.org/schema/content_0_3.xsd"
+            xmlns="http://www.eol.org/transfer/content/0.3"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:dcterms="http://purl.org/dc/terms/"
+            xmlns:dwc="http://rs.tdwg.org/dwc/dwcore/"
+            xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >      
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/ambiguum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/442169</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron ambiguum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/442169</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1911</dcterms:created>
+       <dcterms:modified>1911</dcterms:modified>
+       <dc:title>Rhododendron ambiguum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 137: t. 8400 (1911)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/442169</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron ambiguum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/442169</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/auriculatum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/470135</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron auriculatum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/470135</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1919</dcterms:created>
+       <dcterms:modified>1919</dcterms:modified>
+       <dc:title>Rhododendron auriculatum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 145: t. 8786 (1919)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/470135</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron auriculatum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/470135</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/boothii</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/441715</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron boothii</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/441715</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1890</dcterms:created>
+       <dcterms:modified>1890</dcterms:modified>
+       <dc:title>Rhododendron boothii - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 116: t. 7149 (1890)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/441715</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron boothii in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/441715</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/callimorphum/callimorphum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/470145</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron callimorphum callimorphum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/470145</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1919</dcterms:created>
+       <dcterms:modified>1919</dcterms:modified>
+       <dc:title>Rhododendron callimorphum callimorphum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 145: t.8789 (1919)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/470145</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron callimorphum callimorphum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/470145</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/camelliiflorum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/438436</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron camelliiflorum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/438436</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1856</dcterms:created>
+       <dcterms:modified>1856</dcterms:modified>
+       <dc:title>Rhododendron camelliiflorum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 82: t. 4932 (1856)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/438436</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron camelliiflorum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/438436</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/campanulatum/campanulatum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/466555</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron campanulatum campanulatum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/466555</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1840</dcterms:created>
+       <dcterms:modified>1840</dcterms:modified>
+       <dc:title>Rhododendron campanulatum campanulatum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 66: t.3759 (1840)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/466555</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron campanulatum campanulatum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/466555</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/campylocarpum/campylocarpum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/438551</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron campylocarpum campylocarpum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/438551</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1857</dcterms:created>
+       <dcterms:modified>1857</dcterms:modified>
+       <dc:title>Rhododendron campylocarpum campylocarpum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 83: t.4968 (1857)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/438551</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron campylocarpum campylocarpum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/438551</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/catawbiense</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/485832</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron catawbiense</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/485832</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1814</dcterms:created>
+       <dcterms:modified>1814</dcterms:modified>
+       <dc:title>Rhododendron catawbiense - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 40: t. 1671 (1814)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/485832</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron catawbiense in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/485832</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/caucasicum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/472858</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron caucasicum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/472858</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1808</dcterms:created>
+       <dcterms:modified>1808</dcterms:modified>
+       <dc:title>Rhododendron caucasicum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 28: t.1145 (1808)- as R. caucaseum</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/472858</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron caucasicum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/472858</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/ciliatum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/467193</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron ciliatum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/467193</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1852</dcterms:created>
+       <dcterms:modified>1852</dcterms:modified>
+       <dc:title>Rhododendron ciliatum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 78: t. 4648 (1852)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/467193</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron ciliatum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/467193</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/ciliicalyx</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/450921</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron ciliicalyx</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/450921</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1901</dcterms:created>
+       <dcterms:modified>1901</dcterms:modified>
+       <dc:title>Rhododendron ciliicalyx - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 127: t. 7782 (1901)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/450921</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron ciliicalyx in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/450921</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/collettianum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/437451</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron collettianum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/437451</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1888</dcterms:created>
+       <dcterms:modified>1888</dcterms:modified>
+       <dc:title>Rhododendron collettianum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 114: t. 7019 (1888)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/437451</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron collettianum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/437451</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/concinnum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/472516</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron concinnum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/472516</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1915</dcterms:created>
+       <dcterms:modified>1915</dcterms:modified>
+       <dc:title>Rhododendron concinnum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 141: t. 8620 (1915)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/472516</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron concinnum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/472516</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/cuffeanum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/470064</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron cuffeanum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/470064</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1917</dcterms:created>
+       <dcterms:modified>1917</dcterms:modified>
+       <dc:title>Rhododendron cuffeanum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 143: t. 8721 (1917)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/470064</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron cuffeanum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/470064</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/dalhousiae/dalhousiae</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/467413</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron dalhousiae dalhousiae</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/467413</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1853</dcterms:created>
+       <dcterms:modified>1853</dcterms:modified>
+       <dc:title>Rhododendron dalhousiae dalhousiae - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 79: t. 4718 (1853)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/467413</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron dalhousiae dalhousiae in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/467413</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/davidsonianum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/472459</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron davidsonianum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/472459</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1915</dcterms:created>
+       <dcterms:modified>1915</dcterms:modified>
+       <dc:title>Rhododendron davidsonianum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 141: t. 8605 (1915)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/472459</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron davidsonianum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/472459</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/decorum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/471438</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron decorum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/471438</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1916</dcterms:created>
+       <dcterms:modified>1916</dcterms:modified>
+       <dc:title>Rhododendron decorum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 142: t. 8659 (1916)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/471438</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron decorum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/471438</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/dichroanthum/dichroanthum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/470235</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron dichroanthum dichroanthum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/470235</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1919</dcterms:created>
+       <dcterms:modified>1919</dcterms:modified>
+       <dc:title>Rhododendron dichroanthum dichroanthum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 145: t.8815 (1919)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/470235</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron dichroanthum dichroanthum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/470235</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/edgeworthii</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/438448</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron edgeworthii</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/438448</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1856</dcterms:created>
+       <dcterms:modified>1856</dcterms:modified>
+       <dc:title>Rhododendron edgeworthii - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 82: t. 4936 (1856)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/438448</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron edgeworthii in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/438448</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/falconeri/falconeri</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/438412</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron falconeri falconeri</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/438412</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1856</dcterms:created>
+       <dcterms:modified>1856</dcterms:modified>
+       <dc:title>Rhododendron falconeri falconeri - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 82: t. 4924 (1856)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/438412</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron falconeri falconeri in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/438412</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/falconeri/exinuum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/453522</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron falconeri exinuum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/453522</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1893</dcterms:created>
+       <dcterms:modified>1893</dcterms:modified>
+       <dc:title>Rhododendron falconeri exinuum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 119: t. 7317 (1893)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/453522</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron falconeri exinuum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/453522</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/fortune/fortunei</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/439561</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron fortune fortunei</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/439561</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1866</dcterms:created>
+       <dcterms:modified>1866</dcterms:modified>
+       <dc:title>Rhododendron fortune fortunei - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 92: t. 5596 (1866)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/439561</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron fortune fortunei in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/439561</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/fulgens</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/432381</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron fulgens</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/432381</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1862</dcterms:created>
+       <dcterms:modified>1862</dcterms:modified>
+       <dc:title>Rhododendron fulgens - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 88: t.5317 (1862)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/432381</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron fulgens in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/432381</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/glaucophyllum/glaucophyllum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/467423</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron glaucophyllum glaucophyllum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/467423</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1853</dcterms:created>
+       <dcterms:modified>1853</dcterms:modified>
+       <dc:title>Rhododendron glaucophyllum glaucophyllum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 79: t. 4721 (1853)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/467423</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron glaucophyllum glaucophyllum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/467423</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/grande</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/435466</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron grande</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/435466</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1858</dcterms:created>
+       <dcterms:modified>1858</dcterms:modified>
+       <dc:title>Rhododendron grande - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 84: t. 5054 (1858) - as R. argenteum</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/435466</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron grande in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/435466</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/griffithianum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/435469</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron griffithianum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/435469</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1858</dcterms:created>
+       <dcterms:modified>1858</dcterms:modified>
+       <dc:title>Rhododendron griffithianum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 84: t.5055 (1858)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/435469</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron griffithianum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/435469</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/hodgsonii</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/439328</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron hodgsonii</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/439328</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1866</dcterms:created>
+       <dcterms:modified>1866</dcterms:modified>
+       <dc:title>Rhododendron hodgsonii - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 92: t. 5552 (1866)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/439328</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron hodgsonii in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/439328</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/hookeri</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/438418</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron hookeri</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/438418</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1856</dcterms:created>
+       <dcterms:modified>1856</dcterms:modified>
+       <dc:title>Rhododendron hookeri - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 82: t. 4926 (1856)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/438418</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron hookeri in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/438418</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/iiroratum/irroratum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/453708</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron iiroratum irroratum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/453708</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1894</dcterms:created>
+       <dcterms:modified>1894</dcterms:modified>
+       <dc:title>Rhododendron iiroratum irroratum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 120: t.7361 (1894)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/453708</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron iiroratum irroratum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/453708</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/keiskei</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/438024</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron keiskei</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/438024</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1910</dcterms:created>
+       <dcterms:modified>1910</dcterms:modified>
+       <dc:title>Rhododendron keiskei - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 136: t. 8300 (1910)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/438024</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron keiskei in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/438024</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/keysii</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/467906</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron keysii</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/467906</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1855</dcterms:created>
+       <dcterms:modified>1855</dcterms:modified>
+       <dc:title>Rhododendron keysii - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 81: t. 4875 (1855)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/467906</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron keysii in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/467906</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/lepidotum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/467220</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron lepidotum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/467220</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1852</dcterms:created>
+       <dcterms:modified>1852</dcterms:modified>
+       <dc:title>Rhododendron lepidotum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 78: t. 4657 (1852)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/467220</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron lepidotum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/467220</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/lepidotum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/467675</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron lepidotum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/467675</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1854</dcterms:created>
+       <dcterms:modified>1854</dcterms:modified>
+       <dc:title>Rhododendron lepidotum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 80: t. 4802 (1854)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/467675</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron lepidotum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/467675</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/lutescens</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/470368</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron lutescens</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/470368</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1920</dcterms:created>
+       <dcterms:modified>1920</dcterms:modified>
+       <dc:title>Rhododendron lutescens - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 146: t. 8851 (1920)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/470368</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron lutescens in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/470368</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/maddenii/maddenii</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/467683</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron maddenii maddenii</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/467683</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1854</dcterms:created>
+       <dcterms:modified>1854</dcterms:modified>
+       <dc:title>Rhododendron maddenii maddenii - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 80: t. 4805 (1854)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/467683</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron maddenii maddenii in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/467683</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/maddenii/maddenii</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/438655</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron maddenii maddenii</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/438655</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1857</dcterms:created>
+       <dcterms:modified>1857</dcterms:modified>
+       <dc:title>Rhododendron maddenii maddenii - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 83: t. 5002 (1857)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/438655</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron maddenii maddenii in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/438655</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/maddenii/crassum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/455510</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron maddenii crassum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/455510</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1908</dcterms:created>
+       <dcterms:modified>1908</dcterms:modified>
+       <dc:title>Rhododendron maddenii crassum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 134: t. 8212 (1908)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/455510</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron maddenii crassum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/455510</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/micranthum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/455452</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron micranthum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/455452</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1908</dcterms:created>
+       <dcterms:modified>1908</dcterms:modified>
+       <dc:title>Rhododendron micranthum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 134: t. 8198 (1908)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/455452</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron micranthum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/455452</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/moupinense</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/472429</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron moupinense</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/472429</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1915</dcterms:created>
+       <dcterms:modified>1915</dcterms:modified>
+       <dc:title>Rhododendron moupinense - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 141: t. 8598 (1915)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/472429</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron moupinense in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/472429</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/mucronulatum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/438041</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron mucronulatum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/438041</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1910</dcterms:created>
+       <dcterms:modified>1910</dcterms:modified>
+       <dc:title>Rhododendron mucronulatum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 136: t. 8304 (1910)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/438041</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron mucronulatum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/438041</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/neriiflonim/neriiflorum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/470082</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron neriiflonim neriiflorum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/470082</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1917</dcterms:created>
+       <dcterms:modified>1917</dcterms:modified>
+       <dc:title>Rhododendron neriiflonim neriiflorum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 143: t.8727 (1917)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/470082</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron neriiflonim neriiflorum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/470082</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/niveum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/467451</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron niveum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/467451</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1853</dcterms:created>
+       <dcterms:modified>1853</dcterms:modified>
+       <dc:title>Rhododendron niveum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 79: t.4730 (1853)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/467451</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron niveum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/467451</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/nuttallii</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/435745</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron nuttallii</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/435745</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1859</dcterms:created>
+       <dcterms:modified>1859</dcterms:modified>
+       <dc:title>Rhododendron nuttallii - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 85: t. 5146 (1859)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/435745</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron nuttallii in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/435745</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/orbiculare/orbiculare</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/471679</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron orbiculare orbiculare</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/471679</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1918</dcterms:created>
+       <dcterms:modified>1918</dcterms:modified>
+       <dc:title>Rhododendron orbiculare orbiculare - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 144: t. 8775 (1918)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/471679</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron orbiculare orbiculare in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/471679</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/oreodoxa/fargesii</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/470111</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron oreodoxa fargesii</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/470111</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1917</dcterms:created>
+       <dcterms:modified>1917</dcterms:modified>
+       <dc:title>Rhododendron oreodoxa fargesii - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 143: t.8736 (1917)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/470111</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron oreodoxa fargesii in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/470111</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/oreotrephes</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/471709</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron oreotrephes</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/471709</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1918</dcterms:created>
+       <dcterms:modified>1918</dcterms:modified>
+       <dc:title>Rhododendron oreotrephes - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 144: t. 8784 (1918)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/471709</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron oreotrephes in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/471709</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/polylepis</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/438060</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron polylepis</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/438060</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1910</dcterms:created>
+       <dcterms:modified>1910</dcterms:modified>
+       <dc:title>Rhododendron polylepis - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 136: t. 8309 (1910)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/438060</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron polylepis in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/438060</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/ponticum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/470940</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron ponticum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/470940</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1803</dcterms:created>
+       <dcterms:modified>1803</dcterms:modified>
+       <dc:title>Rhododendron ponticum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 18: t.690 (1803)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/470940</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron ponticum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/470940</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/rubiginosum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/450537</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron rubiginosum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/450537</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1898</dcterms:created>
+       <dcterms:modified>1898</dcterms:modified>
+       <dc:title>Rhododendron rubiginosum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 124: t. 7621 (1898)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/450537</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron rubiginosum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/450537</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/simiarum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/450055</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron simiarum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/450055</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1906</dcterms:created>
+       <dcterms:modified>1906</dcterms:modified>
+       <dc:title>Rhododendron simiarum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 132: t.8111 (1906) - as R. fordii</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/450055</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron simiarum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/450055</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/souliei</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/472528</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron souliei</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/472528</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1915</dcterms:created>
+       <dcterms:modified>1915</dcterms:modified>
+       <dc:title>Rhododendron souliei - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 141: t. 8622 (1915)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/472528</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron souliei in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/472528</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/spinuliferum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/442202</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron spinuliferum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/442202</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1911</dcterms:created>
+       <dcterms:modified>1911</dcterms:modified>
+       <dc:title>Rhododendron spinuliferum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 137: t. 8408 (1911)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/442202</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron spinuliferum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/442202</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/trichostomum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/470296</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron trichostomum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/470296</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1920</dcterms:created>
+       <dcterms:modified>1920</dcterms:modified>
+       <dc:title>Rhododendron trichostomum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 146: t. 8831 (1920)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/470296</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron trichostomum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/470296</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/ungernii</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/469889</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron ungernii</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/469889</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1910</dcterms:created>
+       <dcterms:modified>1910</dcterms:modified>
+       <dc:title>Rhododendron ungernii - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 136: t.8332 (1910)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/469889</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron ungernii in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/469889</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/veitchianum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/438624</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron veitchianum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/438624</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1857</dcterms:created>
+       <dcterms:modified>1857</dcterms:modified>
+       <dc:title>Rhododendron veitchianum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 83: t. 4992 (1857)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/438624</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron veitchianum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/438624</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/virgatum/virgatum</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/435484</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron virgatum virgatum</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/435484</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1858</dcterms:created>
+       <dcterms:modified>1858</dcterms:modified>
+       <dc:title>Rhododendron virgatum virgatum - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 84: t. 5060 (1858)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/435484</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron virgatum virgatum in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/435484</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/virgatum/oleifoiium</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/470189</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron virgatum oleifoiium</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/470189</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1919</dcterms:created>
+       <dcterms:modified>1919</dcterms:modified>
+       <dc:title>Rhododendron virgatum oleifoiium - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 145: t. 8802 (1919)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/470189</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron virgatum oleifoiium in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/470189</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/wightii</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/472275</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron wightii</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/472275</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1913</dcterms:created>
+       <dcterms:modified>1913</dcterms:modified>
+       <dc:title>Rhododendron wightii - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 139: t.8492 (1913)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/472275</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron wightii in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/472275</mediaURL>
+   </dataObject>
+</taxon>
+             
+<taxon>
+   <dcterms:identifier>http://data.rbge.org.uk/taxa/Rhododendron/yunnanense</dcterms:identifier>
+   <dc:source>http://www.biodiversitylibrary.org/page/450512</dc:source>
+   <dwc:Kingdom>Plantae</dwc:Kingdom>
+   <dwc:Family>Ericaceae</dwc:Family>
+   <dwc:Genus>Rhododendron</dwc:Genus>
+   <dwc:ScientificName>Rhododendron yunnanense</dwc:ScientificName>
+   <dataObject>
+       <dcterms:identifier>http://www.biodiversitylibrary.org/pageimage/450512</dcterms:identifier>
+       <dataType>http://purl.org/dc/dcmitype/StillImage</dataType>
+       <mimeType>image/jpeg</mimeType>
+       <agent role="compiler" homepage="http://www.rbge.org.uk">Royal Botanic Garden Edinburgh</agent>
+       <agent role="compiler" homepage="http://www.mobot.org/MOBOT/molib/">Missouri Botanical Garden, Peter H. Raven Library</agent>
+       <dcterms:created>1898</dcterms:created>
+       <dcterms:modified>1898</dcterms:modified>
+       <dc:title>Rhododendron yunnanense - Botanical Illustration</dc:title>
+       <dc:language>en</dc:language>
+       <license>http://creativecommons.org/licenses/by-nc/3.0/</license>
+       <dcterms:bibliographicCitation>Bot. Mag. 124: t. 7614 (1898)</dcterms:bibliographicCitation>
+       <audience>General public</audience>
+       <dc:source>http://www.biodiversitylibrary.org/page/450512</dc:source>
+       <dc:description xml:lang="en">
+            Illustration in Curtis Botanical Magazine held in Biodiversity Heritage Library.
+            Cited as an example of Rhododendron yunnanense in Chamberlain, D.F. (1982) A Revision of Rhododendron II. Subgenus Hymenanthes. Notes From the Royal Botanic Garden Edinburgh 39(2):293.
+       </dc:description>
+       <mediaURL>http://www.biodiversitylibrary.org/pageimage/450512</mediaURL>
+   </dataObject>
+</taxon>
+       </response>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns:dc="http://purl.org/dc/terms/">
+    
+    <!-- human title -->
+    <dc:title>Royal Botanic Garden Edinburgh Herbarium (E)</dc:title>
+    
+    <!-- How to cite this dataset -->
+    <dc:bibliographicCitation>Royal Botanic Garden Edinburgh. ({{YEAR}}) Preserved Collections Database (E)</dc:bibliographicCitation>
+    
+    <!-- summary of the dataset -->
+    <dc:abstract>Royal Botanic Garden Edinburgh Herbarium (E). Curator David Harris. Approximately 3 million specimens.</dc:abstract>
+    
+    <!-- full description -->
+    <dc:description>RBGE's extensive Herbarium numbers nearly three million specimens representing half to two thirds of the world's flora.
+        It is considered a leading botanical collection, and every year many researchers from around the world visit to study our specimens in a well-designed and user-friendly
+        setting.
+        Edinburgh incorporates the following herbaria :- 
+        CTN: Herbarium, Free Library and Museum, Campbeltown, Strathclyde Region, Scotland U.K.
+        EBH: Herbarium, Botanical Society of Edinburgh, Edinburgh, Scotland U.K.
+        EDH: Herbarium, Plinian Society, Edinburgh, Scotland U.K.
+        EGH: Herbarium, University of Edinburgh, Edinburgh, Scotland U.K.
+        GL: (except British) on permanent loan: Herbarium, Botany Department, University of Glasgow, Glasgow G12 8QQ, Scotland U.K.
+        KSO: Herbarium, Tweedside Physical and Antiquarian Society Museum
+        Kelso, Borders Region, Scotland U.K.
+        NCCE: Herbarium, Nature Conservancy Council, 12 Hope Terrace, Edinburgh, Scotland U.K.
+        NCE: (tropical pteridophytes): Herbarium, School of Biological Sciences, University of Newcastle upon Tyne, Newcastle upon Tyne NE1 7RU, England U.K.
+    </dc:description>
+    
+    <!-- keywords -->
+    <dc:subject>Herbarium Plant Specimens R.K. Greville J.H. Balfour Peter Davis George Walker Arnott</dc:subject>
+    
+    <!-- 
+        The main language used in the dataset.
+        Recommended best practice is to use a controlled vocabulary such as RFC 4646.
+    -->
+    <dc:language>en</dc:language>
+    
+    <!-- if there exists a globally unique identifier for the dataset already, e.g. a DOI -->
+    <dc:identifier></dc:identifier>
+    
+    <!-- 
+        "homepage", a link to an online version of the dataset, e.g. a search website or the online description of the dataset
+        For links to individual records please use the dwc archive data files or a static mapping with variables.
+        See http://code.google.com/p/gbif-ecat/wiki/DwCArchive#Variables_in_static_mappings
+    -->
+    <dc:source>http://www.rbge.org.uk/science/herbarium</dc:source>
+    
+    <!-- if dataset is available in another format, e.g. a database dump or pdf file -->
+    <!--
+    <dc:isFormatOf></dc:isFormatOf>
+    -->
+    
+    <!-- An entity primarily responsible for making the darwin core archive -->
+    <dc:creator>Rob Cubey</dc:creator>
+    
+    <!-- Date of creation of the resource. Use the ISO date format YYYY-MM-DD -->
+    <dc:created>{{TIMESTAMP}}</dc:created>
+    
+    <!-- An entity responsible for making the resource available. Examples of a Publisher include a person, an organization, or a service -->
+    <dc:publisher>Royal Botanic Garden Edinburgh (E)</dc:publisher>
+    
+    <!-- A comma seperated list of entities responsible for making contributions to the resource. -->
+    <dc:contributor>R.K. Greville, J.H. Balfour, Peter Davis, George Walker Arnott</dc:contributor>
+    
+    <!-- Information about rights held in and over the resource.Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights. -->
+    <dc:rights>Copyright Royal Botanic Garden Edinburgh. Contact us for rights to commercial use.</dc:rights>
+    
+    <!-- A legal document giving official permission to do something with the resource. -->
+    <dc:license>http://creativecommons.org/licenses/by-nc/3.0/</dc:license>
+    
+</metadata>

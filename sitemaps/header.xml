@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/" >
+	
+	<rdf:Description rdf:about="http://data.rbge.org.uk/">
+		<dc:creator>Simple PHP RDF Script implemented by Roger Hyam (RBGE)</dc:creator>
+		<dc:created>{CREATED_DATE}</dc:created>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://data.rbge.org.uk/">
+		<dwc:Occurrence>
+			<rdf:Bag>
+			    
