@@ -14,6 +14,8 @@ function dumpTable($tableName){
 
     global $mysqli;
 
+    $keys = array();
+
     echo "Dumping table\n";
 
     // Make the CSV file of the table
@@ -30,10 +32,16 @@ function dumpTable($tableName){
         
         $newRow = array();
         for($i = 0; $i < $response->field_count; $i++){
+
             $s = str_replace("\n", " ", $row[$i]);
             $s = str_replace("\r", " ", $row[$i]);
             $s = str_replace("NULL", "", $s);
             $newRow[$i] = strip_tags($s);
+
+            // catch the key for the row 
+            // so we can do ref checking the images
+            if($i == 0) $keys[$s] = $s;
+
         }
         
         fputcsv($fp, $newRow);
@@ -42,7 +50,7 @@ function dumpTable($tableName){
     fclose($fp);
     
     // make a similar table for the images
-    dumpImageTable($tableName);
+    dumpImageTable($tableName, $keys);
 
     // Make the Provenance file - just change the created date and year
     $provString = file_get_contents("metadata/$tableName" . "_prov.xml");
@@ -84,7 +92,7 @@ function dumpTable($tableName){
     echo 'Archive created for ' . $tableName . " \n";
 }
 
-function dumpImageTable($type){
+function dumpImageTable($type, $keys){
 
     global $mysqli;
 
@@ -108,19 +116,49 @@ function dumpImageTable($type){
         $item_type = 'living collection specimen with accession number';
     }
     $response = $mysqli->query($sql, MYSQLI_USE_RESULT);
+
     while($row = $response->fetch_array()){       
+    
         
+        // we get some rubbish back that doesn't link well 
+        // and breaks ref integrity in the archive file
+        // so make sure they match at least the correct form
+        $id = $row['accession_barcode'];
+        if($type == 'darwin_core'){
+            $id = strtoupper(substr($id, 0, 9));
+            if(!preg_match('/^E[0-9]{8}$/', $id)){
+                echo "Bad id: $id \n"; 
+                continue;
+            }
+        }else{
+            // chop off any ending
+            $id = substr($id, 0, 8);
+            if(!preg_match('/^[0-9]{8}$/', $id)){
+                echo "Bad id: $id \n";
+                continue; 
+            }
+        }
+
+        $uri = $url_prefix . $id;
+
+        // check we have an id for this in the core
+        // we are joining back up things with no referential integrity
+        if(!isset($keys[$uri])){
+            echo "Key not found: $uri \n";
+            continue;
+        }
+
         $new_row = array();
-        $new_row[] = $url_prefix . $row['accession_barcode']; // core id
+        $new_row[] = $uri; // core id
         $new_row[] = "StillImage"; // type
         $new_row[] = "image/jpeg"; // format
         $new_row[] = $row['image_url']; // identifier
-        $new_row[] = $url_prefix . $row['accession_barcode']; // reference
+        $new_row[] = $url_prefix . $id; // reference
         
-        $new_row[] = $row['accession_barcode']; // title
+        $new_row[] = $id; // title
         
         // description
-        $description = "Image of $item_type ". $row['accession_barcode'];
+        $description = "Image of $item_type ". $id;
         if($row['photographer']) $description .= " by " . $row['photographer'];
         $new_row[] = $description; // title
         
