@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="yes"?>
 <archive xmlns="http://rs.tdwg.org/dwc/text/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.tdwg.org/dwc/text/ http://darwincore.googlecode.com/svn/trunk/text/tdwg_dwc_text.xsd" metadata="prov.xml">
-    <core encoding="UTF-8" fieldsTerminatedBy="," linesTerminatedBy="\n" fieldsEnclosedBy='"' ignoreHeaderLines="0" rowType="http://rs.tdwg.org/dwc/xsd/simpledarwincore/SimpleDarwinRecord">
+    <core encoding="UTF-8" fieldsTerminatedBy="," linesTerminatedBy="\n" fieldsEnclosedBy='"' ignoreHeaderLines="0" rowType="http://rs.tdwg.org/dwc/terms/Occurrence">
         <files>
             <location>darwin_core_living.csv</location>
         </files>
