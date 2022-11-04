@@ -69,8 +69,8 @@
         // 1) check if the barcode exists and if it doesn't send a 404
         //$response = $mysqli->query("SELECT count(*) as n FROM bgbase_dump.darwin_core WHERE GloballyUniqueIdentifier = '$guid'");
         
-        $response = $mysqli->query("SELECT SPECIMEN_NUM as id FROM bgbase_dump.specimens WHERE BARCODE = '$objectID'");
-        
+        //$response = $mysqli->query("SELECT SPECIMEN_NUM as id FROM bgbase_dump.specimens WHERE BARCODE = '$objectID'");
+        /*
         if($response->num_rows < 1){
             header("HTTP/1.0 404 Not Found");
             header("Status: 404 Not Found");
@@ -80,12 +80,15 @@
 
         // get the specimen number used by the catalogue url
         $row = $response->fetch_assoc();
+        */
         
         // 2) see if they are human and if they are redirect to herbarium catalogue
         // 3) if they are machine then redirect to rdf/herb.php?guid=***
         if(humanIsCalling()){
             
-            $url = $herbariumCatalogueURL . $row['id'];
+            //URL structure changed by MP 3/11/2022
+            //$url = $herbariumCatalogueURL . $row['id'];
+            $url = $herbariumCatalogueURL . $objectID;
             header("Location: $url",TRUE,303);
             exit();
             

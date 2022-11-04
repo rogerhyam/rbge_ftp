@@ -8,7 +8,10 @@
   // $serviceURL = 'http://localhost/~rogerhyam/rbge_service/';
   //$herbariumCatalogueURL = 'http://elmer.rbge.org.uk/bgbase/vherb/bgbasevherb.php?cfg=bgbase/vherb/bgbasevherb.cfg&specimens_barcode=';
   //$herbariumCatalogueURL = 'http://elmer.rbge.org.uk/bgbase/vherb/bgbasevherb.php?cfg=bgbase/vherb/fulldetails.cfg&specimens_specimen__num=';
-  $herbariumCatalogueURL = 'https://data.rbge.org.uk/search/herbarium?cfg=fulldetails.cfg&specimen_num=';
+  //$herbariumCatalogueURL = 'https://data.rbge.org.uk/search/herbarium?cfg=fulldetails.cfg&specimen_num=';
+
+  //CATALOG URL changed by MP 3/11/2022
+  $herbariumCatalogueURL = 'https://data.rbge.org.uk/search/herbarium?cfg=fulldetails.cfg&barcode=';
  
   //$livingCatalogueURL = 'http://elmer.rbge.org.uk/bgbase/livcol/bgbaselivcol.php?cfg=bgbase%2Flivcol%2Fbgbaseallacc.cfg&acc__num=';
   $livingCatalogueURL = 'https://data.rbge.org.uk/search/livingcollection?cfg=allacc.cfg&acc_num=';
