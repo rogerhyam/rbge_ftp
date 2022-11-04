@@ -4,8 +4,8 @@
   ini_set('display_errors', 1);
 
   // service directory URL
-  //$serviceURL = 'https://data.rbge.org.uk/service';
-  $serviceURL = 'http://localhost:9000';
+  $serviceURL = 'https://data.rbge.org.uk/service';
+  //$serviceURL = 'http://localhost:9000';
 
   //CATALOG URL changed by MP 3/11/2022
   $herbariumCatalogueURL = 'https://data.rbge.org.uk/search/herbarium?cfg=fulldetails.cfg&barcode=';
