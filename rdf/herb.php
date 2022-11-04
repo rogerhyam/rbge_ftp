@@ -2,53 +2,54 @@
     
     require_once('../config.php');
     require_once('common.php');
+    require_once('../SolrConnection.php');
     
     /*
         Generates RDF for a herbarium specimen from data in the darwin_core table
     */
     
-    $guid = @$_GET['guid'];
-    
+    $barcode = @$_GET['barcode'];
+    $solr = new SolrConnection();        // check it is in SOLR
+
     // do nothing if we don't have the pair
-    if(!$guid){
+    if(!$barcode){
        header("HTTP/1.0 400 Bad Request");
-       echo "You must provide a guid parameters";
+       echo "You must provide a barcode parameters";
        exit();
     }
 
-    // get the data associated with this specimen
-    $sql = "SELECT * FROM bgbase_dump.darwin_core WHERE GloballyUniqueIdentifier = '$guid'";
-    $response = $mysqli->query($sql);
-    $row = $response->fetch_assoc();
-    
-    // check we have something
-    if($response->num_rows == 0){
+    // try and get the solr record for it
+    $result = $solr->query_object((object)array(
+        "query" => "barcode_s:$barcode"
+    ));
+
+    // fail to find a solr record for it
+    if($result->response->numFound == 0){
         header("HTTP/1.0 404 Not Found");
-        echo "There is no specimen matching the GUID - " . $guid;
+        echo "<h1>Not Found</h1>";
+        echo "There is no specimen with barcode $barcode";
         exit();
     }
+    
+    // thunderbirds are go we have a record
+
+    $record = $result->response->docs[0];
 
 	header("Access-Control-Allow-Origin: *");
     header("Content-type: application/rdf+xml; charset=utf-8");
     echo '<?xml version="1.0" encoding="utf-8"?>' . "\n";
     rdfHeader();
     rdfDocumentMetadata();
-    rdfData($row);
+    rdfData($barcode, $record);
     rdfFooter();
     
     
-function rdfData($row){
+function rdfData($barcode, $record){
 	
-	global $collectors;
 	
 	// no matter what we are asked for we use the https uri as the main identifier
-	if(strpos($row['GloballyUniqueIdentifier'], 'http://') !== false){
-		$http_uri = $row['GloballyUniqueIdentifier'];
-		$https_uri = str_replace('http://', 'https://', $row['GloballyUniqueIdentifier']);
-	}else{
-		$https_uri = $row['GloballyUniqueIdentifier']; 
-		$http_uri = str_replace('https://', 'http://', $row['GloballyUniqueIdentifier']);
-	}
+    $http_uri = "http://data.rbge.org.uk/herb/$barcode";
+	$https_uri = "https://data.rbge.org.uk/herb/$barcode";
  
 ?>
 
@@ -61,15 +62,14 @@ function rdfData($row){
         <dc:publisher rdf:resource="http://www.rbge.org.uk" />
         <?php
             $collectorString = "";
-            if($row['Collector']){
-                $collectorString = htmlspecialchars($row['Collector']);
-                if($row['CollectorNumber']) $collectorString .= " #" . $row['CollectorNumber'];                
+            if(isset($record->collector_s)){
+                $collectorString = htmlspecialchars($record->collector_s);
+                if(isset($record->collector_num_s)) $collectorString .= " #" . $record->collector_num_s;                
             }
             if($collectorString) $collectorString .= " ";
-                    
         ?>
         
-        <dc:title><?php echo $collectorString . htmlspecialchars(strip_tags($row['ScientificName'])) ?></dc:title>
+        <dc:title><?php echo $collectorString . htmlspecialchars(strip_tags($record->current_name_plain_ni)) ?></dc:title>
         
         <?php 
             if($collectorString){
@@ -77,99 +77,64 @@ function rdfData($row){
             }
         
         ?>
-        <dc:description>A herbarium specimen of <?php echo htmlspecialchars(strip_tags($row['ScientificName'])) . $collectorString ?></dc:description>
+        <dc:description>A herbarium specimen of <?php echo htmlspecialchars(strip_tags($record->current_name_plain_ni)) . $collectorString ?></dc:description>
         
-        <?php if($row['Collector']){?>
-               <dc:creator><?php echo htmlspecialchars($row['Collector']) ?></dc:creator>
+        <?php if(isset($record->collector_s)){?>
+               <dc:creator><?php echo htmlspecialchars($record->collector_s) ?></dc:creator>
         <?php }?>
         
-        <?php if($row['EarliestDateCollected']){?>
-            <dc:created><?php echo htmlspecialchars($row['EarliestDateCollected']) ?></dc:created>
+        <?php if(isset($record->collection_date_iso_s)){?>
+            <dc:created><?php echo htmlspecialchars($record->collection_date_iso_s) ?></dc:created>
         <?php }?>
         
         
-        <?php if($row['DecimalLongitude'] && $row['DecimalLatitude']){?>
-            <geo:lat><?php echo htmlspecialchars($row['DecimalLatitude']) ?></geo:lat>
-            <geo:long><?php echo htmlspecialchars($row['DecimalLongitude']) ?></geo:long>
+        <?php if(false){?>
+            <geo:lat>FIXME</geo:lat>
+            <geo:long>FIXME</geo:long>
         <?php } ?>
         
-        <!-- Assertions based on Darwin Core -->
-        <dwc:sampleID><?php echo $row['GloballyUniqueIdentifier'] ?></dwc:sampleID>
-        <dc:modified><?php echo $row['DateLastModified'] ?></dc:modified>
+        <!-- Assertions based on Darwin Core and Dublin Core -->
+        <dwc:sampleID>https://data.rbge.org.uk/herb/<?php echo $barcode ?></dwc:sampleID>
+        <dc:modified><?php echo date(DATE_ATOM) ?></dc:modified>
         <dwc:basisOfRecord>Specimen</dwc:basisOfRecord>
         <dc:type>Specimen</dc:type>
         <dwc:institutionCode>http://biocol.org/urn:lsid:biocol.org:col:15670</dwc:institutionCode>
         <dwc:collectionCode>E</dwc:collectionCode>
-        <dwc:catalogNumber><?php echo $row['CatalogNumber'] ?></dwc:catalogNumber>
-        <dwc:scientificName><?php echo htmlspecialchars(strip_tags($row['ScientificName'])) ?></dwc:scientificName>
-        <dwc:family><?php echo $row['Family'] ?></dwc:family>
-        <dwc:genus><?php echo $row['Genus'] ?></dwc:genus>
-        <dwc:specificEpithet><?php echo $row['SpecificEpithet'] ?></dwc:specificEpithet>
-        <dwc:higherGeography><?php echo htmlspecialchars($row['HigherGeography']) ?></dwc:higherGeography>
-
-    <?php if($row['Country']){?>
-        <dwc:country><?php echo htmlspecialchars($row['Country']) ?></dwc:country>
-        <dwc:countryCode><?php echo htmlspecialchars($row['Country']) ?></dwc:countryCode>
-    <?php }?>
-    
-    <?php if($row['StateProvince']){?>
-        <dwc:stateProvince><?php echo htmlspecialchars($row['StateProvince']) ?></dwc:stateProvince>
-    <?php }?>
-        
-    <?php if($row['County']){?>
-        <dwc:county><?php echo htmlspecialchars($row['County']) ?></dwc:county>
-    <?php }?>
-        
-    <?php if($row['Locality']){?>
-        <dwc:locality><?php echo htmlspecialchars($row['Locality']) ?></dwc:locality>
-    <?php }?>
-        
-    <?php if($row['DecimalLongitude'] && $row['DecimalLatitude']){?>
-        <dwc:decimalLongitude><?php echo htmlspecialchars($row['DecimalLongitude']) ?></dwc:decimalLongitude>
-        <dwc:decimalLatitude><?php echo htmlspecialchars($row['DecimalLatitude']) ?></dwc:decimalLatitude>
+        <dwc:catalogNumber><?php echo $barcode ?></dwc:catalogNumber>
+    <?php 
+        if(isset($record->current_name_plain_ni)) echo "\t<dwc:scientificName>". htmlspecialchars(strip_tags($record->current_name_plain_ni)) ."</dwc:scientificName>\n";
+        if(isset($record->family_ni)) echo "\t<dwc:family>{$record->family_ni}</dwc:family>\n";
+        if(isset($record->genus_ni)) echo "\t<dwc:genus>{$record->genus_ni}</dwc:genus>\n";
+        if(isset($record->species_ni)) echo "\t<dwc:specificEpithet>{$record->species_ni}</dwc:specificEpithet>\n";
+        if(isset($record->region_name_s)) echo "\t<dwc:higherGeography>{$record->region_name_s}</dwc:higherGeography>\n";
+        if(isset($record->country_s)) echo "\t<dwc:country>{$record->country_s}</dwc:country>\n";
+        if(isset($record->country_code_t)) echo "\t<dwc:countryCode>{$record->country_code_t}</dwc:countryCode>\n";
+        if(isset($record->locality_ni)) echo "\t<dwc:stateProvince>{$record->locality_ni}</dwc:stateProvince>\n";
+        if(isset($record->collection_date_iso_s)) echo "\t<dwc:earliestDateCollected>{$record->collection_date_iso_s}</dwc:earliestDateCollected>\n";
+        if(isset($record->collector_s)) echo "\t<dwc:recordedBy>" . htmlspecialchars($record->collector_s) . "</dwc:recordedBy>\n";
+        if(isset($record->collector_num_s)) echo "\t<dwc:recordNumber>" . htmlspecialchars($record->collector_num_s) ."</dwc:recordNumber>\n";
+    ?>
+    <?php if(false){?>
+        <dwc:decimalLongitude>FIXME</dwc:decimalLongitude>
+        <dwc:decimalLatitude>FIXME</dwc:decimalLatitude>
     <?php }?>       
         
-    <?php if($row['MinimumElevationInMeters'] && $row['MaximumElevationInMeters']){?>
-        <dwc:minimumElevationInMeters><?php echo htmlspecialchars($row['MinimumElevationInMeters']) ?></dwc:minimumElevationInMeters>
-        <dwc:maximumElevationInMeters><?php echo htmlspecialchars($row['MaximumElevationInMeters']) ?></dwc:maximumElevationInMeters>
+    <?php if(false){?>
+        <dwc:minimumElevationInMeters>FIXME</dwc:minimumElevationInMeters>
+        <dwc:maximumElevationInMeters>FIXME</dwc:maximumElevationInMeters>
     <?php }?>
     
-    <?php if($row['EarliestDateCollected']){?>
-        <dwc:earliestDateCollected><?php echo htmlspecialchars($row['EarliestDateCollected']) ?></dwc:earliestDateCollected>
-    <?php }?>
-    
-    <?php
-		if($row['Collector']){
-    	
-			$coll_name = trim($row['Collector']);	
-			
-			if(isset($collectors[$coll_name])){
-				foreach($collectors[$coll_name] as $coll_uri){
-					echo "<dwciri:recordedBy rdf:resource=\"$coll_uri\" />\n";
-				}
-			}
-			
-			// the old dc version
-			echo "<dwc:recordedBy>" . htmlspecialchars($coll_name) . "</dwc:recordedBy>\n";
-        	
-    	}
-	
-	?>
-
-    <?php if($row['CollectorNumber']){?>
-        <dwc:recordNumber><?php echo htmlspecialchars($row['CollectorNumber']) ?></dwc:recordNumber>
-    <?php }?>
 	
 	<!-- Images associated with the specimen -->
 
     <?php
-        relatedImages($row['CatalogNumber']);
+       // relatedImages($row['CatalogNumber']);
     ?>
 
 	<!-- IIIF resources associated with the specimen -->
 	
     <?php
-        iifImages($row['CatalogNumber']);
+        // iifImages($row['CatalogNumber']);
     ?>
 
         

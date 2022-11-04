@@ -63,7 +63,7 @@
             
         }else{
 			header("Access-Control-Allow-Origin: *");
-            header("Location: $serviceURL/rdf/herb.php?guid=$guid",TRUE,303);
+            header("Location: $serviceURL/rdf/herb.php?barcode=$objectID",TRUE,303);
             exit();
         }
         
