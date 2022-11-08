@@ -113,31 +113,24 @@ function rdfData($barcode, $record){
         if(isset($record->collection_date_iso_s)) echo "\t<dwc:earliestDateCollected>{$record->collection_date_iso_s}</dwc:earliestDateCollected>\n";
         if(isset($record->collector_s)) echo "\t<dwc:recordedBy>" . htmlspecialchars($record->collector_s) . "</dwc:recordedBy>\n";
         if(isset($record->collector_num_s)) echo "\t<dwc:recordNumber>" . htmlspecialchars($record->collector_num_s) ."</dwc:recordNumber>\n";
-    ?>
-    <?php if(false){?>
-        <dwc:decimalLongitude>FIXME</dwc:decimalLongitude>
-        <dwc:decimalLatitude>FIXME</dwc:decimalLatitude>
-    <?php }?>       
         
-    <?php if(false){?>
-        <dwc:minimumElevationInMeters>FIXME</dwc:minimumElevationInMeters>
-        <dwc:maximumElevationInMeters>FIXME</dwc:maximumElevationInMeters>
-    <?php }?>
-    
-	
-	<!-- Images associated with the specimen -->
+        // elevation
+        if(isset($record->altitude_metres_ni)) echo "\t<dwc:minimumElevationInMeters>" . htmlspecialchars($record->altitude_metres_ni) ."</dwc:minimumElevationInMeters>\n";
+        if(isset($record->altitude_metres_ni)) echo "\t<dwc:maximumElevationInMeters>" . htmlspecialchars($record->altitude_metres_ni) ."</dwc:maximumElevationInMeters>\n";
 
-    <?php
-       // relatedImages($row['CatalogNumber']);
-    ?>
+        // long/lat
+        if(isset($record->decimal_longitude_ni)) echo "\t<dwc:decimalLongitude>" . htmlspecialchars($record->decimal_longitude_ni) ."</dwc:decimalLongitude>\n";
+        if(isset($record->decimal_latitude_ni)) echo "\t<dwc:decimalLatitude>" . htmlspecialchars($record->decimal_latitude_ni) ."</dwc:decimalLatitude>\n";
 
-	<!-- IIIF resources associated with the specimen -->
-	
-    <?php
-        // iifImages($row['CatalogNumber']);
-    ?>
 
-        
+    	echo "\n\t<!-- Images associated with the specimen -->\n";
+        relatedImages($barcode, $record);
+
+    	echo "\n\t<!-- IIIF resources associated with the specimen -->\n";
+        iiifImages($barcode, $record);
+
+?>
+      
     </rdf:Description>
     
 <?php
@@ -177,81 +170,66 @@ function hasVersion($guid){
 /*
     If there are any images associated with this specimen add them in.
 */
-function relatedImages($barcode){
+function relatedImages($barcode, $record){
     
-      global $mysqli;
-      
-      $sql = "SELECT di.id, oi.date
-              FROM image_archive.derived_images as di join image_archive.original_images as oi on di.derived_from = oi.id
-              WHERE di.image_type = 'JPG'
-              AND oi.barcode = '$barcode'";
+    if(isset($record->image_filename_nis)){
+
+        foreach($record->image_filename_nis as $file_name){
     
-       $response = $mysqli->query($sql);
-       
-       while($row = $response->fetch_assoc()){
-           
-           $imageUri = "https://data.rbge.org.uk/images/" . $row['id'];
-           $date = str_replace(' ', 'T', $row['date']) . "Z"; // convert to ISO 8601
-           
-           echo "<dc:relation>\n";
-           
-           echo "\t<rdf:Description  rdf:about=\"$imageUri\" >\n";
-           echo "\t\t<dc:identifier rdf:resource=\"$imageUri\" />\n";
-           echo "\t\t<dc:type rdf:resource=\"http://purl.org/dc/dcmitype/Image\" />\n";
-           echo "\t\t<dc:subject rdf:resource=\"https://data.rbge.org.uk/herb/$barcode\" />\n";
-           echo "\t\t<dc:format>image/jpeg</dc:format>\n";
-           echo "\t\t<dc:description xml:lang=\"en\">Image of herbarium specimen</dc:description>\n";
-           echo "\t\t<dc:created>$date</dc:created>\n";
-		   
-		   echo "\t\t<dc:license rdf:resource=\"https://creativecommons.org/publicdomain/zero/1.0/\" />\n";
-		   
-		   
-           echo "\t</rdf:Description>\n";
-           
-           echo "</dc:relation>\n";
-           
-           // also echo it out just as a dwc link           
-           echo "<dwc:associatedMedia rdf:resource=\"$imageUri\" />\n";
-           
-		   
-       }
+            $image_name = pathinfo($file_name, PATHINFO_FILENAME);
+
+            $imageUri = "https://iiif.rbge.org.uk/herb/iiif/$image_name/full/182,/0/default.jpg";
+                        
+            echo "<dc:relation>\n";
+            
+            echo "\t<rdf:Description  rdf:about=\"$imageUri\" >\n";
+            echo "\t\t<dc:identifier rdf:resource=\"$imageUri\" />\n";
+            echo "\t\t<dc:type rdf:resource=\"http://purl.org/dc/dcmitype/Image\" />\n";
+            echo "\t\t<dc:subject rdf:resource=\"https://data.rbge.org.uk/herb/$barcode\" />\n";
+            echo "\t\t<dc:format>image/jpeg</dc:format>\n";
+            echo "\t\t<dc:description xml:lang=\"en\">Image of herbarium specimen</dc:description>\n";
+            echo "\t\t<dc:license rdf:resource=\"https://creativecommons.org/publicdomain/zero/1.0/\" />\n";
+            
+            echo "\t</rdf:Description>\n";
+            
+            echo "</dc:relation>\n";
+            
+            // also echo it out just as a dwc link           
+            echo "<dwc:associatedMedia rdf:resource=\"$imageUri\" />\n";
+            
+        }
+    }
       
 }
 
-function iifImages($barcode){
+
+/*
+    If there is an image add the IIIF manifest link
+*/
+function iiifImages($barcode, $record){
 	
-	
-    global $mysqli;
-    
-    $sql = "SELECT di.id, oi.date
-            FROM image_archive.derived_images as di join image_archive.original_images as oi on di.derived_from = oi.id
-            WHERE di.image_type = 'ZOOMIFY'
-            AND oi.barcode = '$barcode'";
-  
-     $response = $mysqli->query($sql);
-     
-     while($row = $response->fetch_assoc()){
-         
-         $imageUri = "https://iiif.rbge.org.uk/herb/iiif/$barcode/manifest";
-         $date = str_replace(' ', 'T', $row['date']) . "Z"; // convert to ISO 8601
-         
-         echo "<dc:relation>\n";
-         
-         echo "\t<rdf:Description  rdf:about=\"$imageUri\" >\n";
-         echo "\t\t<dc:identifier rdf:resource=\"$imageUri\" />\n";
-         echo "\t\t<dc:type rdf:resource=\"http://iiif.io/api/presentation/3#Manifest\" />\n";
-         echo "\t\t<dc:subject rdf:resource=\"https://data.rbge.org.uk/herb/$barcode\" />\n";
-         echo "\t\t<dc:format>application/ld+json</dc:format>\n";
-         echo "\t\t<dc:description xml:lang=\"en\">A IIIF resource for this specimen.</dc:description>\n";
-         echo "\t\t<dc:created>$date</dc:created>\n";
-		 
-		 echo "\t\t<dc:license rdf:resource=\"https://creativecommons.org/publicdomain/zero/1.0/\" />\n";
-		 
-         echo "\t</rdf:Description>\n";
-         
-         echo "</dc:relation>\n";
-         
-	   
+
+    // E00855041
+
+    if(isset($record->image_filename_nis) && count($record->image_filename_nis) > 0){
+   
+        $imageUri = "https://iiif.rbge.org.uk/herb/iiif/$barcode/manifest";
+        
+        echo "<dc:relation>\n";
+        
+        echo "\t<rdf:Description  rdf:about=\"$imageUri\" >\n";
+        echo "\t\t<dc:identifier rdf:resource=\"$imageUri\" />\n";
+        echo "\t\t<dc:type rdf:resource=\"http://iiif.io/api/presentation/3#Manifest\" />\n";
+        echo "\t\t<dc:subject rdf:resource=\"https://data.rbge.org.uk/herb/$barcode\" />\n";
+        echo "\t\t<dc:format>application/ld+json</dc:format>\n";
+        echo "\t\t<dc:description xml:lang=\"en\">A IIIF resource for this specimen.</dc:description>\n";
+        
+        echo "\t\t<dc:license rdf:resource=\"https://creativecommons.org/publicdomain/zero/1.0/\" />\n";
+        
+        echo "\t</rdf:Description>\n";
+        
+        echo "</dc:relation>\n";
+
      }
 	
 	
