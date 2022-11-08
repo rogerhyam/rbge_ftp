@@ -109,7 +109,7 @@
             
         }else{
 			header("Access-Control-Allow-Origin: *");
-            header("Location: $serviceURL/rdf/living.php?guid=$guid",TRUE,303);
+            header("Location: $serviceURL/rdf/living.php?accession=$accessionNumber",TRUE,303);
             exit();
         }
         

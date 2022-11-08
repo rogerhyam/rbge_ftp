@@ -32,7 +32,6 @@
     }
     
     // thunderbirds are go we have a record
-
     $record = $result->response->docs[0];
 
 	header("Access-Control-Allow-Origin: *");
@@ -178,7 +177,7 @@ function relatedImages($barcode, $record){
     
             $image_name = pathinfo($file_name, PATHINFO_FILENAME);
 
-            $imageUri = "https://iiif.rbge.org.uk/herb/iiif/$image_name/full/182,/0/default.jpg";
+            $imageUri = "https://iiif.rbge.org.uk/herb/iiif/$image_name/full/300,/0/default.jpg";
                         
             echo "<dc:relation>\n";
             
