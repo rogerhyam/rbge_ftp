@@ -1,6 +1,7 @@
 #!/usr/bin/php
 <?php
 require_once('../config.php');
+require_once('../SolrConnection.php');
 
 // this might take some time so give use 5 minutes to think about it
 set_time_limit(0);
@@ -196,7 +197,11 @@ function add_iiif_rows($fp){
     
     $sql = "SELECT barcode FROM image_archive.derived_images WHERE image_type = 'ZOOMIFY'";
     $response = $mysqli->query($sql, MYSQLI_USE_RESULT);
-    while($row = $response->fetch_array()){       
+    while($row = $response->fetch_array()){      
+        
+        
+        "type","format","accessURI", "associatedSpecimenReference", "identifier", "description", "Owner", "rights", "creator", "serviceExpectation");
+
         
         $new_row = array();
         $new_row[] = "http://data.rbge.org.uk/herb/" . $row['barcode']; // core id
