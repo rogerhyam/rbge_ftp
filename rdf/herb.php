@@ -97,7 +97,7 @@ function rdfData($barcode, $record){
         if(isset($record->family_ni)) echo "\t<dwc:family>" .  htmlspecialchars($record->family_ni) ." </dwc:family>\n";
         if(isset($record->genus_ni)) echo "\t<dwc:genus>" .  htmlspecialchars($record->genus_ni) . "</dwc:genus>\n";
         if(isset($record->species_ni)) echo "\t<dwc:specificEpithet>" .  htmlspecialchars($record->species_ni) ."</dwc:specificEpithet>\n";
-        if(isset($record->region_name_s)) echo "\t<dwc:higherGeography>" . $record->region_name_s ."</dwc:higherGeography>\n";
+        if(isset($record->region_name_s)) echo "\t<dwc:higherGeography>" . htmlspecialchars($record->region_name_s) ."</dwc:higherGeography>\n";
         if(isset($record->country_s)) echo "\t<dwc:country>".  htmlspecialchars($record->country_s) ."</dwc:country>\n";
         if(isset($record->country_code_t)) echo "\t<dwc:countryCode>".  htmlspecialchars($record->country_code_t) . "</dwc:countryCode>\n";
         if(isset($record->locality_ni)) echo "\t<dwc:stateProvince>" .  htmlspecialchars($record->locality_ni) ."</dwc:stateProvince>\n";
