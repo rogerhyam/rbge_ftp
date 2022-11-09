@@ -9,7 +9,7 @@
     */
     
     $barcode = @$_GET['barcode'];
-    $solr = new SolrConnection();        // check it is in SOLR
+    $solr = new SolrConnection();
 
     // do nothing if we don't have the pair
     if(!$barcode){
@@ -86,12 +86,6 @@ function rdfData($barcode, $record){
             <dc:created><?php echo htmlspecialchars($record->collection_date_iso_s) ?></dc:created>
         <?php }?>
         
-        
-        <?php if(false){?>
-            <geo:lat>FIXME</geo:lat>
-            <geo:long>FIXME</geo:long>
-        <?php } ?>
-        
         <!-- Assertions based on Darwin Core and Dublin Core -->
         <dwc:sampleID>https://data.rbge.org.uk/herb/<?php echo $barcode ?></dwc:sampleID>
         <dc:modified><?php echo date(DATE_ATOM) ?></dc:modified>
@@ -118,8 +112,11 @@ function rdfData($barcode, $record){
         if(isset($record->altitude_metres_ni)) echo "\t<dwc:maximumElevationInMeters>" . htmlspecialchars($record->altitude_metres_ni) ."</dwc:maximumElevationInMeters>\n";
 
         // long/lat
-        if(isset($record->decimal_longitude_ni)) echo "\t<dwc:decimalLongitude>" . htmlspecialchars($record->decimal_longitude_ni) ."</dwc:decimalLongitude>\n";
+        if(isset($record->decimal_longitude_ni)) echo "\t<dwc:decimalLongitude>" . htmlspecialchars($record->decimal_longitude_ni) ."</dwc:decimalLongitude>\n"; 
         if(isset($record->decimal_latitude_ni)) echo "\t<dwc:decimalLatitude>" . htmlspecialchars($record->decimal_latitude_ni) ."</dwc:decimalLatitude>\n";
+
+        if(isset($record->decimal_longitude_ni)) echo "\t<geo:long>" . htmlspecialchars($record->decimal_longitude_ni) ."</geo:long>\n"; 
+        if(isset($record->decimal_latitude_ni)) echo "\t<geo:lat>" . htmlspecialchars($record->decimal_latitude_ni) ."</geo:lat>\n";
 
 
     	echo "\n\t<!-- Images associated with the specimen -->\n";

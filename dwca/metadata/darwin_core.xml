@@ -2,56 +2,17 @@
 <archive xmlns="http://rs.tdwg.org/dwc/text/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://rs.tdwg.org/dwc/text/ http://rs.tdwg.org/dwc/text/tdwg_dwc_text.xsd" metadata="prov.xml">
-    <core encoding="UTF-8" fieldsTerminatedBy="," linesTerminatedBy="\n" fieldsEnclosedBy='"' ignoreHeaderLines="0" rowType="http://rs.tdwg.org/dwc/terms/Occurrence">
+    <core encoding="UTF-8" fieldsTerminatedBy="," linesTerminatedBy="\n" fieldsEnclosedBy='"' ignoreHeaderLines="1" rowType="http://rs.tdwg.org/dwc/terms/Occurrence">
         <files>
-            <location>darwin_core.csv</location>
+            <location>herbarium_specimens.csv</location>
         </files>
 
         <!-- record id is guid -->
         <id index="0" />
 
-        <!-- column mappings -->
-        <field index="0" term="http://rs.tdwg.org/dwc/terms/occurrenceID" />
-        <field index="1" term="http://purl.org/dc/terms/modified" />
-        <field index="2" term="http://rs.tdwg.org/dwc/terms/catalogNumber" />
-        <field index="3" term="http://rs.tdwg.org/dwc/terms/informationWithheld" />
-        <field index="4" term="http://rs.tdwg.org/dwc/terms/occurrenceRemarks" />
-        <field index="5" term="http://rs.tdwg.org/dwc/terms/scientificName" />
-        <field index="6" term="http://rs.tdwg.org/dwc/terms/family" />
-        <field index="7" term="http://rs.tdwg.org/dwc/terms/genus" />
-        <field index="8" term="http://rs.tdwg.org/dwc/terms/specificEpithet" />
-        <field index="9" term="http://rs.tdwg.org/dwc/terms/higherGeography" />
-        <field index="10" term="http://rs.tdwg.org/dwc/terms/fieldNotes" />
-        <field index="11" term="http://rs.tdwg.org/dwc/terms/country" />
-        <field index="12" term="http://rs.tdwg.org/dwc/terms/stateProvince" />
-        <field index="13" term="http://rs.tdwg.org/dwc/terms/county" />
-        <field index="14" term="http://rs.tdwg.org/dwc/terms/locality" />
-        <field index="15" term="http://rs.tdwg.org/dwc/terms/eventDate" />
-
-        <!-- Not interpreted by GBIF, but the column has to be mapped to something. -->
-        <field index="16" term="http://rs.tdwg.org/dwc/dwcore/LatestDateCollected" />
-
-        <field index="17" term="http://rs.tdwg.org/dwc/terms/startDayOfYear" />
-        <field index="18" term="http://rs.tdwg.org/dwc/terms/recordedBy" />
-        <field index="19" term="http://rs.tdwg.org/dwc/terms/sex" />
-
-        <!-- Not interpreted by GBIF, but the column has to be mapped to something. -->
-        <field index="20" term="http://rs.tdwg.org/dwc/curatorial/CatalogNumberNumeric" />
-
-        <field index="21" term="http://rs.tdwg.org/dwc/terms/recordNumber" />
-        <field index="22" term="http://rs.tdwg.org/dwc/terms/verbatimEventDate" />
-        <field index="23" term="http://rs.tdwg.org/dwc/terms/verbatimElevation" />
-        <field index="24" term="http://rs.tdwg.org/dwc/terms/minimumElevationInMeters" />
-        <field index="25" term="http://rs.tdwg.org/dwc/terms/maximumElevationInMeters" />
-        <field index="26" term="http://rs.tdwg.org/dwc/terms/preparations" />
-        <field index="27" term="http://rs.tdwg.org/dwc/terms/typeStatus" />
-        <field index="28" term="http://rs.tdwg.org/dwc/terms/otherCatalogNumbers" />
-        <field index="29" term="http://rs.tdwg.org/dwc/terms/geodeticDatum" />
-        <field index="30" term="http://rs.tdwg.org/dwc/terms/verbatimLongitude" />
-        <field index="31" term="http://rs.tdwg.org/dwc/terms/verbatimLatitude" />
-        <field index="32" term="http://rs.tdwg.org/dwc/terms/decimalLongitude" />
-        <field index="33" term="http://rs.tdwg.org/dwc/terms/decimalLatitude" />
-
+        <!-- dynamic fields -->
+        {{DYNAMIC_FIELDS}}
+       
         <!-- static values -->
         <field term="http://rs.tdwg.org/dwc/terms/nomenclaturalCode" default="ICBN" />
         <field term="http://rs.tdwg.org/dwc/terms/basisOfRecord" default="PreservedSpecimen" />
@@ -61,13 +22,13 @@
         <field term="http://rs.tdwg.org/dwc/terms/datasetName" default="Royal Botanic Garden Edinburgh Herbarium" />
         <field term="http://rs.tdwg.org/dwc/terms/ownerInstitutionCode" default="E" />
         <field term="http://rs.tdwg.org/dwc/terms/institutionCode" default="E" />
-        <field term="http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem" default="degrees minutes seconds" />
-
+         <field term="http://rs.tdwg.org/dwc/terms/geodeticDatum" default="wgs84" />
     </core>
+
 
     <extension encoding="UTF-8" fieldsTerminatedBy="," linesTerminatedBy="\n" fieldsEnclosedBy='"' ignoreHeaderLines="0" rowType="http://rs.tdwg.org/ac/terms/Multimedia">
         <files>
-            <location>darwin_core_images.csv</location>
+            <location>herbarium_specimen_images.csv</location>
         </files>
         <coreid index="0"/>
         <field index="1" term="http://purl.org/dc/elements/1.1/type"/>
@@ -76,12 +37,14 @@
         <field index="4" term="http://rs.tdwg.org/ac/terms/associatedSpecimenReference"/>
         <field index="5" term="http://purl.org/dc/terms/identifier"/>
         <field index="6" term="http://purl.org/dc/terms/description"/>
-        <field index="7" term="http://ns.adobe.com/xap/1.0/rights/Owner"/>
-        <field index="8" term="http://purl.org/dc/terms/rights"/>
-        <field index="9" term="http://purl.org/dc/elements/1.1/rights"/>
-        <field index="10" term="http://purl.org/dc/elements/1.1/creator"/>
-        <field index="11" term="http://rs.tdwg.org/ac/terms/serviceExpectation"/>
+        <field index="7" term="http://rs.tdwg.org/ac/terms/serviceExpectation"/>
 
+        <!-- static values -->
+        <field term="http://ns.adobe.com/xap/1.0/rights/Owner" default="Royal Botanic Garden Edinburgh"/>
+        <field term="http://purl.org/dc/terms/rights" default="https://creativecommons.org/publicdomain/zero/1.0/"/>
+        <field term="http://purl.org/dc/elements/1.1/rights" default="Copyright Royal Botanic Garden Edinburgh."/>
+        <field term="http://purl.org/dc/elements/1.1/creator" default="Royal Botanic Garden Edinburgh"/>
+       
     </extension>
 
 </archive>

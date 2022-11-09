@@ -13,3 +13,29 @@
 
   // all data comes out of SOLR now
   define('SOLR_QUERY_URI', "http://webstorage.rbge.org.uk:8983/solr/bgbase/select");
+
+  $dwc_dynamic_fields = array(
+
+    "occurrenceID" => "http://rs.tdwg.org/dwc/terms/occurrenceID",
+    "catalogNumber" => "http://rs.tdwg.org/dwc/terms/catalogNumber",
+    "informationWithheld" => "http://rs.tdwg.org/dwc/terms/informationWithheld",
+    "decimalLongitude" => "http://rs.tdwg.org/dwc/terms/decimalLongitude",
+    "decimalLatitude" => "http://rs.tdwg.org/dwc/terms/decimalLatitude",
+    "scientificName" => "http://rs.tdwg.org/dwc/terms/scientificName",
+    "family" => "http://rs.tdwg.org/dwc/terms/family",
+    "genus" => "http://rs.tdwg.org/dwc/terms/genus",
+    "specificEpithet" => "http://rs.tdwg.org/dwc/terms/specificEpithet",
+    "higherGeography" => "http://rs.tdwg.org/dwc/terms/higherGeography",
+    "country" => "http://rs.tdwg.org/dwc/terms/country",
+    "locality" => "http://rs.tdwg.org/dwc/terms/locality",
+    "eventDate" => "http://rs.tdwg.org/dwc/terms/eventDate",
+    "recordedBy" => "http://rs.tdwg.org/dwc/terms/recordedBy",
+    "recordNumber" => "http://rs.tdwg.org/dwc/terms/recordNumber",
+    "CatalogNumberNumeric" => "http://rs.tdwg.org/dwc/curatorial/CatalogNumberNumeric",
+    "verbatimEventDate" => "http://rs.tdwg.org/dwc/terms/verbatimEventDate",
+    "verbatimElevation" => "http://rs.tdwg.org/dwc/terms/verbatimElevation",
+    "minimumElevationInMeters" => "http://rs.tdwg.org/dwc/terms/minimumElevationInMeters",
+    "maximumElevationInMeters" => "http://rs.tdwg.org/dwc/terms/maximumElevationInMeters",
+    "typeStatus" => "http://rs.tdwg.org/dwc/terms/typeStatus"
+
+  );
