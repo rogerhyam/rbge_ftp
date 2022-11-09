@@ -27,7 +27,7 @@
      */
     
     // we need to check that the table exists and if they don't send a wait for me
-    $path = $_GET['path'];
+    $path = @$_GET['path'];
     $guid = 'http://data.rbge.org.uk/' . $path;
     $solr = new SolrConnection();
     

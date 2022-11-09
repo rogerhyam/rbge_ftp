@@ -66,35 +66,33 @@ function rdfData($barcode, $record){
                 if(isset($record->collector_num_s)) $collectorString .= " #" . $record->collector_num_s;                
             }
             if($collectorString) $collectorString .= " ";
-        ?>
-        
-        <dc:title><?php echo $collectorString . htmlspecialchars(strip_tags($record->current_name_plain_ni)) ?></dc:title>
-        
-        <?php 
-            if($collectorString){
-                $collectorString = ' collected by ' . $collectorString;
+
+            $current_name = isset($record->current_name_plain_ni)? $record->current_name_plain_ni : 'indet.';
+            $current_name =  htmlspecialchars(strip_tags($current_name));
+
+            echo "<dc:title>$collectorString $current_name</dc:title>";
+
+            if($collectorString) $collectorString = ' collected by ' . $collectorString;
+
+            echo " <dc:description>A herbarium specimen of $current_name $collectorString ?></dc:description>";
+            
+            if(isset($record->collector_s)){
+               echo "<dc:creator>". htmlspecialchars($record->collector_s) . "</dc:creator>";
             }
         
-        ?>
-        <dc:description>A herbarium specimen of <?php echo htmlspecialchars(strip_tags($record->current_name_plain_ni)) . $collectorString ?></dc:description>
+        if(isset($record->collection_date_iso_s)){
+           echo "<dc:created>" . htmlspecialchars($record->collection_date_iso_s) . "</dc:created>";
+        }
         
-        <?php if(isset($record->collector_s)){?>
-               <dc:creator><?php echo htmlspecialchars($record->collector_s) ?></dc:creator>
-        <?php }?>
-        
-        <?php if(isset($record->collection_date_iso_s)){?>
-            <dc:created><?php echo htmlspecialchars($record->collection_date_iso_s) ?></dc:created>
-        <?php }?>
-        
-        <!-- Assertions based on Darwin Core and Dublin Core -->
-        <dwc:sampleID>https://data.rbge.org.uk/herb/<?php echo $barcode ?></dwc:sampleID>
-        <dc:modified><?php echo date(DATE_ATOM) ?></dc:modified>
-        <dwc:basisOfRecord>Specimen</dwc:basisOfRecord>
-        <dc:type>Specimen</dc:type>
-        <dwc:institutionCode>http://biocol.org/urn:lsid:biocol.org:col:15670</dwc:institutionCode>
-        <dwc:collectionCode>E</dwc:collectionCode>
-        <dwc:catalogNumber><?php echo $barcode ?></dwc:catalogNumber>
-    <?php 
+        echo "\n<!-- Assertions based on Darwin Core and Dublin Core -->\n";
+        echo "<dwc:sampleID>https://data.rbge.org.uk/herb/$barcode</dwc:sampleID>";
+        echo "<dc:modified>" . date(DATE_ATOM) . "</dc:modified>";
+        echo "<dwc:basisOfRecord>Specimen</dwc:basisOfRecord>";
+        echo "<dc:type>Specimen</dc:type>";
+        echo "<dwc:institutionCode>http://biocol.org/urn:lsid:biocol.org:col:15670</dwc:institutionCode>";
+        echo "<dwc:collectionCode>E</dwc:collectionCode>";
+        echo "<dwc:catalogNumber>$barcode</dwc:catalogNumber>";
+
         if(isset($record->current_name_plain_ni)) echo "\t<dwc:scientificName>". htmlspecialchars(strip_tags($record->current_name_plain_ni)) ."</dwc:scientificName>\n";
         if(isset($record->family_ni)) echo "\t<dwc:family>{$record->family_ni}</dwc:family>\n";
         if(isset($record->genus_ni)) echo "\t<dwc:genus>{$record->genus_ni}</dwc:genus>\n";
