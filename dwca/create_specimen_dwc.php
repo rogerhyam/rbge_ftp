@@ -192,8 +192,8 @@ function write_specimen_record($out, $record, $fields){
         // can display location info
          // <field index="3" term="http://rs.tdwg.org/dwc/terms/informationWithheld" />
         $row['informationWithheld'] = null;
-        $row['decimalLongitude'] = isset($record->decimal_longitude_ni) ? $record->decimal_longitude_ni : null;
-        $row['decimalLatitude'] = isset($record->decimal_latitude_ni) ? $record->decimal_latitude_ni : null;
+        $row['decimalLongitude'] = isset($record->longitude_decimal_ni) ? $record->longitude_decimal_ni : null;
+        $row['decimalLatitude'] = isset($record->latitude_decimal_ni) ? $record->latitude_decimal_ni : null;
     }else{
         // can't display location info
         // <field index="3" term="http://rs.tdwg.org/dwc/terms/informationWithheld" />

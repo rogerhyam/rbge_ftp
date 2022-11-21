@@ -110,11 +110,11 @@ function rdfData($barcode, $record){
         if(isset($record->altitude_metres_ni)) echo "\t<dwc:maximumElevationInMeters>" . htmlspecialchars($record->altitude_metres_ni) ."</dwc:maximumElevationInMeters>\n";
 
         // long/lat
-        if(isset($record->decimal_longitude_ni)) echo "\t<dwc:decimalLongitude>" . htmlspecialchars($record->decimal_longitude_ni) ."</dwc:decimalLongitude>\n"; 
-        if(isset($record->decimal_latitude_ni)) echo "\t<dwc:decimalLatitude>" . htmlspecialchars($record->decimal_latitude_ni) ."</dwc:decimalLatitude>\n";
+        if(isset($record->longitude_decimal_ni)) echo "\t<dwc:decimalLongitude>" . htmlspecialchars($record->longitude_decimal_ni) ."</dwc:decimalLongitude>\n"; 
+        if(isset($record->latitude_decimal_ni)) echo "\t<dwc:decimalLatitude>" . htmlspecialchars($record->latitude_decimal_ni) ."</dwc:decimalLatitude>\n";
 
-        if(isset($record->decimal_longitude_ni)) echo "\t<geo:long>" . htmlspecialchars($record->decimal_longitude_ni) ."</geo:long>\n"; 
-        if(isset($record->decimal_latitude_ni)) echo "\t<geo:lat>" . htmlspecialchars($record->decimal_latitude_ni) ."</geo:lat>\n";
+        if(isset($record->longitude_decimal_ni)) echo "\t<geo:long>" . htmlspecialchars($record->longitude_decimal_ni) ."</geo:long>\n"; 
+        if(isset($record->latitude_decimal_ni)) echo "\t<geo:lat>" . htmlspecialchars($record->latitude_decimal_ni) ."</geo:lat>\n";
 
 
     	echo "\n\t<!-- Images associated with the specimen -->\n";
