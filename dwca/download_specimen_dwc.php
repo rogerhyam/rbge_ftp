@@ -1,5 +1,10 @@
 <?php
 
+require_once('../config.php');
+
+// this might take some time so give use 5 minutes to think about it
+set_time_limit(0);
+
 if(!@$_REQUEST['barcodes']){
     // they didn't pass a list of barcodes
     http_response_code(400);
