@@ -10,10 +10,17 @@ $solr = new SolrConnection();
 
 // have we been passed a list of barcodes to process
 $barcodes = @$_REQUEST['barcodes'];
-if($barcodes) $barcodes = explode(',',$barcodes);
-
-$query = (object)array("query" => "record_type_s:specimen");
-
+if($barcodes){
+    $barcodes = str_replace(',', ' OR ', $barcodes);
+    $query = (object)array(
+        "query" => "barcode_s:($barcodes)",
+        "fq" => "record_type_s:specimen"
+    );
+}else{
+    // no list of barcodes specified so use the who thing
+    $query = (object)array("query" => "record_type_s:specimen");
+}
+ 
 $out = fopen("tmp/herbarium_specimens.csv", 'w');
 if(!$out) exit("Couldn't open file:tmp/herbarium_specimens.csv ");
 
@@ -60,7 +67,6 @@ while($records = $solr->query_paged($query)){
 }
 
 fclose($out);
-
 
 // Make the eml file - just change the created date 
 $eml_string = file_get_contents("metadata/darwin_core_eml.xml");
