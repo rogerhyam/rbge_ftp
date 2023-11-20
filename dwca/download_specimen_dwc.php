@@ -1,6 +1,8 @@
 <?php
 
 require_once('../config.php');
+require_once('../SolrConnection.php');
+require_once('common_specimen_dwc.php');
 
 // this might take some time so give use 5 minutes to think about it
 set_time_limit(0);
@@ -11,45 +13,46 @@ if(!@$_REQUEST['barcodes']){
     echo "You need to provide a comma separated list of barcodes that you'd like data for. GET and POST accepted.";
     exit;
 }else{
-    $barcodes = explode(',', $_REQUEST['barcodes']);
+    $barcodes = str_replace(',', ' OR ', $_REQUEST['barcodes']);
 }
+
+$solr = new SolrConnection();
+$query = (object)array(
+    "query" => "barcode_s:($barcodes)",
+    "filter" => "record_type_s:specimen"
+);
 
 $random_dir = 'data/downloads/' . rand() . '/';
 mkdir($random_dir, 0777, true);
 
 // write the specimens
-$out = fopen($random_dir . 'herbarium_specimens.csv', 'w');
-$in = fopen('zip://data/edinburgh_herbarium_dwc.zip#herbarium_specimens.csv' , 'r');
+$out_specimens = fopen($random_dir . 'herbarium_specimens.csv', 'w');
+// put in a header row - makes things easier
+fputcsv($out_specimens, array_keys($dwc_dynamic_fields));
 
-// header 
-fputcsv($out, fgetcsv($in));
+$out_images = fopen($random_dir . 'herbarium_specimen_images.csv', 'w');
+// put in a header row - makes things easier
+fputcsv($out_images, $image_fields);
 
-while($line = fgetcsv($in)){
-    if(in_array($line[1], $barcodes)){
-        fputcsv($out, $line);
+// do the pages
+$page_number = 0;
+$specimen_count = 0;
+while($records = $solr->query_paged($query)){
+
+    // report progress
+    $specimen_count += count($records);
+    $page_number++;
+
+    // work through records in page
+    foreach($records as $record){
+        write_specimen_record($out_specimens, $record, $dwc_dynamic_fields);
+        write_image_record($out_images, $record, $image_fields);
     }
+
 }
 
-fclose($in);
-fclose($out);
 
-// same for images
-$out = fopen($random_dir . 'herbarium_specimen_images.csv', 'w');
-$in = fopen('zip://data/edinburgh_herbarium_dwc.zip#herbarium_specimen_images.csv' , 'r');
-
-// header 
-fputcsv($out, fgetcsv($in));
-
-while($line = fgetcsv($in)){
-    if(in_array(substr($line[0], -9), $barcodes)){
-        fputcsv($out, $line);
-    }
-}
-
-fclose($in);
-fclose($out);
-
-// metadata files
+// metadata files - stolen from the live one
 $meta = file_get_contents('zip://data/edinburgh_herbarium_dwc.zip#meta.xml');
 file_put_contents($random_dir . 'meta.xml', $meta);
 $eml = file_get_contents('zip://data/edinburgh_herbarium_dwc.zip#eml.xml');

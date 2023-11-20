@@ -39,3 +39,14 @@
     "typeStatus" => "http://rs.tdwg.org/dwc/terms/typeStatus"
 
   );
+
+  $image_fields = array(
+    "coreId",
+    "type",
+    "format",
+    "accessURI",
+    "associatedSpecimenReference",
+    "identifier",
+    "description",
+    "serviceExpectation"
+);
