@@ -1,5 +1,12 @@
 <?php
 
+// refuse to run if we are called through HTTP
+if(php_sapi_name() != 'cli'){
+    http_response_code(400);
+    echo "You can't call this script over the web. It is for command line use only.";
+    exit;
+}
+
 require_once('../config.php');
 require_once('../SolrConnection.php');
 
