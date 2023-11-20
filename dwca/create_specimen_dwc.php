@@ -8,18 +8,7 @@ set_time_limit(0);
 
 $solr = new SolrConnection();
 
-// have we been passed a list of barcodes to process
-$barcodes = @$_REQUEST['barcodes'];
-if($barcodes){
-    $barcodes = str_replace(',', ' OR ', $barcodes);
-    $query = (object)array(
-        "query" => "barcode_s:($barcodes)",
-        "filter" => "record_type_s:specimen"
-    );
-}else{
-    // no list of barcodes specified so use the who thing
-    $query = (object)array("query" => "record_type_s:specimen");
-}
+$query = (object)array("query" => "record_type_s:specimen");
  
 $out = fopen("tmp/herbarium_specimens.csv", 'w');
 if(!$out) exit("Couldn't open file:tmp/herbarium_specimens.csv ");
