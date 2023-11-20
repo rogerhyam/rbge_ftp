@@ -14,7 +14,7 @@ if($barcodes){
     $barcodes = str_replace(',', ' OR ', $barcodes);
     $query = (object)array(
         "query" => "barcode_s:($barcodes)",
-        "fq" => "record_type_s:specimen"
+        "filter" => "record_type_s:specimen"
     );
 }else{
     // no list of barcodes specified so use the who thing
