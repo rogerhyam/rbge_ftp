@@ -87,10 +87,18 @@ function write_specimen_record($out, $record, $fields){
         $row['decimalLatitude'] = null;
     }
 
-    $row['scientificName'] = isset($record->current_name_plain_ni) ? $record->current_name_plain_ni : null;
-    $row['family'] = isset($record->family_t) ? $record->family_t : null;
-    $row['genus'] = isset($record->genus_t) ? $record->genus_t : null;
-    $row['specificEpithet'] = isset($record->species_t) ? $record->species_t : null;
+    //$row['scientificName'] = isset($record->current_name_plain_ni) ? $record->current_name_plain_ni : null;
+    $row['scientificName'] = isset($record->accepted_current_name_plain_ni) ? $record->accepted_current_name_plain_ni : null;
+    
+    //$row['family'] = isset($record->family_t) ? $record->family_t : null;
+    $row['family'] = isset($record->accepted_family_t) ? $record->accepted_family_t : null;
+
+    //$row['genus'] = isset($record->genus_t) ? $record->genus_t : null;
+    $row['genus'] = isset($record->accepted_genus_t) ? $record->accepted_genus_t : null;
+
+    // $row['specificEpithet'] = isset($record->species_t) ? $record->species_t : null;
+    $row['specificEpithet'] = isset($record->accepted_species_t) ? $record->accepted_species_t : null;
+
     $row['higherGeography'] = isset($record->region_name_s) ? $record->region_name_s : null;
     $row['country'] = isset($record->country_code_t) ? $record->country_code_t : null;
     $row['locality'] = isset($record->country_t) ? $record->country_t : null;
