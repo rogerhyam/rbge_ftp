@@ -77,6 +77,7 @@
             $qualifier = substr($objectID, 8);
             $qualifier = strtoupper($qualifier);  
             $result = $solr->query("id_s:$accessionNumber AND acc_num_qual_ss:$qualifier");
+            $isPlant = true;
         }else{
             $isPlant = false;
             $accessionNumber = $objectID;
