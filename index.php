@@ -31,7 +31,6 @@
     $guid = 'http://data.rbge.org.uk/' . $path;
     $solr = new SolrConnection();
     
-    
     // the namespace is the first part of the path information  and objectID the second   
     $namespace = substr($path, 0, strpos($path, '/'));
     $objectID = substr($path, strpos($path, '/')+1);
@@ -75,17 +74,15 @@
         // the accession number may include letters because this is a plant not just an accession	
         if(strlen($objectID) > 8){
             $accessionNumber = substr($objectID, 0,8);
-            $qualifier = substr($objectID, 8);            
+            $qualifier = substr($objectID, 8);
+            $qualifier = strtoupper($qualifier);  
+            $result = $solr->query("id_s:$accessionNumber AND acc_num_qual_ss:$qualifier");
         }else{
             $isPlant = false;
             $accessionNumber = $objectID;
+            $result = $solr->query("id_s:$accessionNumber");
         }
-
-        // check it is in SOLR
-        $result = $solr->query_object((object)array(
-    		"query" => "id:\"accession:$objectID\""
-        ));
-
+        
         if($result->response->numFound == 0){
             header("HTTP/1.0 404 Not Found");
             header("Status: 404 Not Found");
