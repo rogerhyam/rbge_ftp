@@ -34,7 +34,8 @@ function write_image_record($out, $record, $fields){
         $jpeg_row["coreId"] = "https://data.rbge.org.uk/herb/{$record->barcode_s}"; // core id
         $jpeg_row["type"] = "StillImage"; // type
         $jpeg_row["format"] = "image/jpeg"; // format
-        $jpeg_row["accessURI"] = "https://iiif.rbge.org.uk/herb/iiif/{$record->barcode_s}/manifest"; // identifier
+        //$jpeg_row["accessURI"] = "https://iiif.rbge.org.uk/herb/iiif/{$record->barcode_s}/manifest"; // identifier
+        $jpeg_row["accessURI"] = $imageUri;
         $jpeg_row["associatedSpecimenReference"] = $imageUri; // reference
         $jpeg_row["identifier"] =  $image_name;
         $jpeg_row["description"] = "JPEG Image of specimen {$record->barcode_s}"; // description
