@@ -15,14 +15,19 @@
        
         <!-- static values -->
         <field term="http://rs.tdwg.org/dwc/terms/nomenclaturalCode" default="ICBN" />
-        <field term="http://rs.tdwg.org/dwc/terms/basisOfRecord" default="PreservedSpecimen" />
         <field term="http://purl.org/dc/terms/type" default="PhysicalObject" />
-        <field term="http://rs.tdwg.org/dwc/terms/collectionCode" default="E" />
-        <field term="http://rs.tdwg.org/dwc/terms/collectionID" default="http://biocol.org/urn:lsid:biocol.org:col:15670" />
-        <field term="http://rs.tdwg.org/dwc/terms/datasetName" default="Royal Botanic Garden Edinburgh Herbarium" />
         <field term="http://rs.tdwg.org/dwc/terms/ownerInstitutionCode" default="E" />
-        <field term="http://rs.tdwg.org/dwc/terms/institutionCode" default="E" />
-         <field term="http://rs.tdwg.org/dwc/terms/geodeticDatum" default="wgs84" />
+        <field term="http://rs.tdwg.org/dwc/terms/geodeticDatum" default="wgs84" />
+        <field term="http://rs.tdwg.org/dwc/terms/institutionCode" default="RBGE" />
+        <field term="http://rs.tdwg.org/dwc/terms/institutionID" default="https://scientific-collections.gbif.org/institution/0237598a-853a-492c-af74-a723fe251799" />
+        <field term="http://rs.tdwg.org/dwc/terms/collectionID" default="https://scientific-collections.gbif.org/collection/427c8cd7-4358-4a00-9ef3-2b2676d28d1e" />
+        <field term="http://rs.tdwg.org/dwc/terms/collectionCode" default="E" />
+        <field term="http://rs.tdwg.org/dwc/terms/datasetName" default="Edinburgh (E) Herbarium Specimens (selected by filtering by barcode starts with E)" />
+        <field term="http://rs.tdwg.org/dwc/terms/basisOfRecord" default="Preserved specimen" />
+        <field term="http://purl.org/dc/elements/1.1/type" default="PhysicalObject" />
+        <field term="http://rs.tdwg.org/dwc/terms/license" default="CC0" />
+        <field term="http://rs.tdwg.org/dwc/terms/rightsHolder" default="Royal Botanic Garden Edinburgh" />   
+        
     </core>
 
 
@@ -43,7 +48,9 @@
         <field term="http://ns.adobe.com/xap/1.0/rights/Owner" default="Royal Botanic Garden Edinburgh"/>
         <field term="http://purl.org/dc/terms/rights" default="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <field term="http://purl.org/dc/elements/1.1/rights" default="Copyright Royal Botanic Garden Edinburgh."/>
+        <field term="http://rs.tdwg.org/dwc/terms/rightsHolder" default="Royal Botanic Garden Edinburgh" />   
         <field term="http://purl.org/dc/elements/1.1/creator" default="Royal Botanic Garden Edinburgh"/>
+        <field term="http://rs.tdwg.org/dwc/terms/license" default="CC BY" />
        
     </extension>
 

@@ -27,6 +27,9 @@
     "specificEpithet" => "http://rs.tdwg.org/dwc/terms/specificEpithet",
     "higherGeography" => "http://rs.tdwg.org/dwc/terms/higherGeography",
     "country" => "http://rs.tdwg.org/dwc/terms/country",
+    "countryCode" => "http://rs.tdwg.org/dwc/terms/countryCode",
+    "county" => "http://rs.tdwg.org/dwc/terms/county",
+    "stateProvince" => "http://rs.tdwg.org/dwc/terms/stateProvince",
     "locality" => "http://rs.tdwg.org/dwc/terms/locality",
     "eventDate" => "http://rs.tdwg.org/dwc/terms/eventDate",
     "recordedBy" => "http://rs.tdwg.org/dwc/terms/recordedBy",
@@ -36,7 +39,10 @@
     "verbatimElevation" => "http://rs.tdwg.org/dwc/terms/verbatimElevation",
     "minimumElevationInMeters" => "http://rs.tdwg.org/dwc/terms/minimumElevationInMeters",
     "maximumElevationInMeters" => "http://rs.tdwg.org/dwc/terms/maximumElevationInMeters",
-    "typeStatus" => "http://rs.tdwg.org/dwc/terms/typeStatus"
+    "typeStatus" => "http://rs.tdwg.org/dwc/terms/typeStatus",
+    "preparations" => "http://rs.tdwg.org/dwc/terms/preparations",
+    "associatedMedia" => "http://rs.tdwg.org/dwc/terms/associatedMedia",
+    "habitat" => "http://rs.tdwg.org/dwc/terms/habitat"
 
   );
 
