@@ -65,6 +65,8 @@ function write_specimen_record($out, $record, $fields){
     // <field index="1" term="http://rs.tdwg.org/dwc/terms/catalogNumber" />
     $row['catalogNumber'] = $record->barcode_t;
 
+    $row['basisOfRecord'] = isset($record->specimen_kind_ni) ? $record->specimen_kind_ni : 'specimen';
+    
     // it location_sensitive_t is not set or it is set to LL then it is OK to display location
     if( 
         !(isset($record->cultivated_i) && $record->cultivated_i) // not cultivated
@@ -109,15 +111,17 @@ function write_specimen_record($out, $record, $fields){
 
     $row['locality'] = isset($record->locality_ni) ? $record->locality_ni : null;
     $row['eventDate'] =  isset($record->collection_date_iso_s) ? $record->collection_date_iso_s : null;
-    $row['recordedBy'] =  isset($record->collector_t) ? $record->collector_t : null;
+    $row['recordedBy'] =  isset($record->collector_full_s) ? $record->collector_full_s : null;
     
-    $row['recordNumber'] =  isset($record->collector_num_t) ? $record->collector_num_t : null;
+    $row['recordNumber'] =  isset($record->collector_num_s) ? $record->collector_num_s : null;
     $row['CatalogNumberNumeric'] =  isset($record->id_s) ? $record->id_s : null;
     $row['verbatimEventDate'] =  isset($record->collection_date_s) ? $record->collection_date_s : null;
     $row['verbatimElevation'] =  isset($record->altitude_metres_ni) ? $record->altitude_metres_ni  . "m" : null;
     $row['minimumElevationInMeters'] =  isset($record->altitude_metres_ni) ? $record->altitude_metres_ni : null;
     $row['maximumElevationInMeters'] =  isset($record->altitude_metres_ni) ? $record->altitude_metres_ni : null;
     $row['habitat'] =  isset($record->habitat_ni) ? $record->habitat_ni : null;
+    $row['modified'] =  isset($record->modified_date_8601_ni) ? $record->modified_date_8601_ni : null;
+
 
     // types of types
     if(isset($record->istype_i) &&  $record->istype_i){
@@ -139,31 +143,22 @@ function write_specimen_record($out, $record, $fields){
         $row['typeStatus'] = null;
     }
 
-    // associated material
-    if(isset($record->associated_material_barcode_nis) &&  count($record->associated_material_barcode_nis) > 0){
-       
-        $vals = array();
+    // preparations - we include any associated materials if they are different
+    $preps = array();
 
-        for($i = 0; $i < count($record->associated_material_barcode_nis); $i++) {
-            
-            // a the barcode
-            $val = $record->associated_material_barcode_nis[$i];
+    // firstly the prep of the actual specimen
+    if(isset($record->specimen_kind_ni)) $preps[] = $record->specimen_kind_ni;
 
-            // the kind
-            if(isset($record->associated_material_kind_nis[$i])){
-                $val .= " : " . $record->associated_material_kind_nis[$i];
-            } 
-
-            // probably no point including specify internal id associated_material_preparation_id_nis
-            
-            $vals[] = $val;
-            
-        }
-
-        $row['preparations'] = implode(' | ', $vals);
-    }else{
-        $row['preparations'] = null;
+    // associated material preparation types
+    if(isset($record->associated_material_kind_nis) &&  count($record->associated_material_kind_nis) > 0){
+       $preps = array_merge($preps, $record->associated_material_kind_nis);
     }
+
+    // only one of each kind
+    $preps = array_unique($preps);
+
+    // now add it in
+    $row['preparations'] = implode('|', $preps);
 
     if(isset($record->image_filename_nis)){
         $vals = array();
@@ -187,4 +182,4 @@ function write_specimen_record($out, $record, $fields){
     }
     fputcsv($out, $ordered_row);
 
-}
+} 

@@ -16,7 +16,16 @@ set_time_limit(0);
 
 $solr = new SolrConnection();
 
-$query = (object)array("query" => "record_type_s:specimen");
+
+// FIXME the filter will need extending 
+// when they publish microscope slides etc
+$query = (object)array(
+    "query" => "*:*",
+    "filter" => array(
+        "record_type_s:specimen",
+        "specimen_kind_ni:HERBARIUM SHEET"
+    )
+);
  
 $out = fopen("tmp/herbarium_specimens.csv", 'w');
 if(!$out) exit("Couldn't open file:tmp/herbarium_specimens.csv ");

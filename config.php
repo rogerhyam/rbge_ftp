@@ -18,6 +18,7 @@
 
     "occurrenceID" => "http://rs.tdwg.org/dwc/terms/occurrenceID",
     "catalogNumber" => "http://rs.tdwg.org/dwc/terms/catalogNumber",
+    "basisOfRecord" => "http://rs.tdwg.org/dwc/terms/basisOfRecord",
     "informationWithheld" => "http://rs.tdwg.org/dwc/terms/informationWithheld",
     "decimalLongitude" => "http://rs.tdwg.org/dwc/terms/decimalLongitude",
     "decimalLatitude" => "http://rs.tdwg.org/dwc/terms/decimalLatitude",
@@ -42,7 +43,8 @@
     "typeStatus" => "http://rs.tdwg.org/dwc/terms/typeStatus",
     "preparations" => "http://rs.tdwg.org/dwc/terms/preparations",
     "associatedMedia" => "http://rs.tdwg.org/dwc/terms/associatedMedia",
-    "habitat" => "http://rs.tdwg.org/dwc/terms/habitat"
+    "habitat" => "http://rs.tdwg.org/dwc/terms/habitat",
+    "modified" => "http://purl.org/dc/terms/modified"
 
   );
 

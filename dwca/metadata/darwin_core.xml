@@ -23,7 +23,6 @@
         <field term="http://rs.tdwg.org/dwc/terms/collectionID" default="https://scientific-collections.gbif.org/collection/427c8cd7-4358-4a00-9ef3-2b2676d28d1e" />
         <field term="http://rs.tdwg.org/dwc/terms/collectionCode" default="E" />
         <field term="http://rs.tdwg.org/dwc/terms/datasetName" default="Edinburgh (E) Herbarium Specimens (selected by filtering by barcode starts with E)" />
-        <field term="http://rs.tdwg.org/dwc/terms/basisOfRecord" default="Preserved specimen" />
         <field term="http://purl.org/dc/elements/1.1/type" default="PhysicalObject" />
         <field term="http://rs.tdwg.org/dwc/terms/license" default="CC0" />
         <field term="http://rs.tdwg.org/dwc/terms/rightsHolder" default="Royal Botanic Garden Edinburgh" />   
