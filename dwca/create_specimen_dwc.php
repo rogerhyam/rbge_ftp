@@ -23,7 +23,7 @@ $query = (object)array(
     "query" => "*:*",
     "filter" => array(
         "record_type_s:specimen",
-        "specimen_kind_ni:HERBARIUM SHEET"
+        "specimen_kind_ni:\"HERBARIUM SHEET\""
     )
 );
  
