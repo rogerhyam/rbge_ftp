@@ -28,8 +28,7 @@ function write_image_record($out, $record, $fields){
     foreach($record->image_filename_nis as $file_name){
 
         $image_name = pathinfo($file_name, PATHINFO_FILENAME);
-        $imageUri = "https://iiif.rbge.org.uk/herb/iiif/$image_name/full/300,/0/default.jpg";
-
+        $imageUri = "https://iiif.rbge.org.uk/herb/iiif/$image_name/full/1600,/0/default.jpg";
         $jpeg_row = array();
         $jpeg_row["coreId"] = "https://data.rbge.org.uk/herb/{$record->barcode_s}"; // core id
         $jpeg_row["type"] = "StillImage"; // type
